@@ -171,10 +171,13 @@
     }
 
     let setX = (e) => {
+
         confs[text_index].x = e.target.value
         // ctx.clearRect(0,0, canvas.width, canvas.height)
-        ctx.drawImage(image, 0, 0)
+        // ctx.drawImage(image, 0, 0)
+        // ctx.translate(confs[text_index].x, confs[text_index].y)
         ctx.fillText(confs[text_index].text, confs[text_index].x, confs[text_index].y)
+        
     }
 
     let setY = (e) => {
@@ -234,8 +237,10 @@
 
     let update = () => {
         console.log("terpanggil")
+        // ctx.beginPath()
         text_input.value = confs[text_index].text
         ctx.fillText(confs[text_index].text, confs[text_index].x, confs[text_index].y)
+        // ctx.translate(confs[text_index].x, confs[text_index].y)
     }
 
     // console.log(selected_font)
