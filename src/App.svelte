@@ -1,9 +1,11 @@
 <script>
 	import Editor from './admin/Editor.svelte'
+	import Landing from './Landing.svelte'
 </script>
 
 
-<Editor />
+<!-- <Editor /> -->
+<Landing />
 
 
 <style>
